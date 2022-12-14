@@ -1,0 +1,363 @@
+:root {
+  --color-main: #757575;
+  --color-accent: #2196f3;
+  --color-logo-studio: #000;
+  --color-title: #212121;
+  --color-invert: #fff;
+  --color-hero: #2f303a;
+  --color-button: #f5f4fa;
+  --color-border: #eee;
+  --color-border-header: #ececec;
+  --color-active: #188ce8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 14px;
+  color: var(--color-main);
+  background-color: var(--color-invert);
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  border-bottom: 1px solid var(--color-border-header);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-links,
+.header-link-contacts {
+  display: block;
+  padding: 32px 0;
+}
+
+.header-nav,
+.header-list,
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  gap: 93px;
+}
+
+.header-list,
+.header-contacts {
+  gap: 50px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: calc(30.52 / 26);
+  color: var(--color-logo-studio);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  align-items: center;
+}
+
+.logo-web {
+  color: var(--color-accent);
+}
+
+.header-links {
+  color: var(--color-title);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-links:hover,
+.header-links:focus {
+  color: var(--color-accent);
+}
+
+.header-link-contacts {
+  color: var(--color-main);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-link-contacts:hover,
+.header-link-contacts:focus {
+  color: var(--color-accent);
+}
+
+.current {
+  color: var(--color-accent);
+}
+
+.link-mail {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link-tel {
+  color: var(--color-main);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.section {
+  padding: 94px 0px;
+}
+
+.hero-section {
+  padding: 200px 452px;
+  max-width: 1600px;
+  background-color: var(--color-hero);
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  color: var(--color-invert);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-invert);
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--color-active);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.features-list,
+.services-list,
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  }
+
+.features-item {
+  width: calc((100% - 30px)/4);
+}
+
+.activity-section {
+  padding-top: 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-title);
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-title);
+  margin-bottom: 10px;
+}
+
+.features {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.team-section {
+   background-color: var(--color-button);
+}
+
+.team-card {
+  background-color: var(--color-invert);
+  border-radius: 0px 0px 4px 4px;
+ }
+
+.team-member {
+  padding: 30px;
+}
+
+.subtitle-team {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-title);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.footer {
+  padding: 60px 0px;
+  background-color: var(--color-hero);
+}
+
+.logo-invert {
+  color: var(--color-invert);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.address {
+  margin-top: 20px;
+ }
+
+.footer-links,
+.footer-map {
+  color: var(--color-main);
+  text-decoration: none;
+  font-style: normal;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.mail-link {
+  margin-top: 9px;
+  margin-bottom: 6px;
+}
+.footer-map {
+  color: var(--color-invert);
+}
+
+.footer-links:hover,
+.footer-links:focus,
+.footer-map:hover,
+.footer-map:focus {
+  color: var(--color-accent);
+}
+
+.filter-button {
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-title);
+  background: var(--color-button);
+  border-radius: 4px;
+  border: 1px solid var(--color-button);
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background: var(--color-accent);
+  color: var(--color-invert);
+}
+
+.project-title {
+ margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--color-title);
+}
+
+.project-type {
+    font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.project-card {
+  padding: 20px 24px;
+  border-left: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  }
