@@ -156,7 +156,7 @@ body {
   padding: 200px 0;
   max-width: 1600px;
   background-color: var(--color-hero);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Img-hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
